@@ -25,10 +25,6 @@ public extension Sketch {
 
             let node = SCNNode()
             node.position = SCNVector3(x: 0, y: 0, z: 0)
-
-            let constraint = SCNLookAtConstraint(target: node)
-            constraint.isGimbalLockEnabled = true
-            node.constraints = [constraint]
             
             node.light = lightSCN
             

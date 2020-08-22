@@ -27,10 +27,6 @@ public extension Sketch {
             let node = SCNNode(geometry: geometry)
             node.position = SCNVector3(x: 0, y: 0, z: 0)
 
-            let constraint = SCNLookAtConstraint(target: node)
-            constraint.isGimbalLockEnabled = true
-            node.constraints = [constraint]
-
             self.currentTransformationNode.addShapeNode(node,newtag)
 
         }
